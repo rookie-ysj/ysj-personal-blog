@@ -1,13 +1,17 @@
-import BlogList from './components/blog-list/BlogList.tsx'
+import { Outlet } from 'react-router-dom'
 import PageTitle from './components/page-title/PageTitle.tsx'
+import { useCustomSelector } from './hooks/useStore.ts'
 import './App.css'
 
 function App() {
+  const theme = useCustomSelector(state => state.theme.theme)
   return (
-    <>
+    <main className={`text-foreground bg-background ${theme}`}>
       <PageTitle />
-      <BlogList />
-    </>
+      <div style={{ maxHeight: 'calc(100% - 100px)' }}>
+        <Outlet />
+      </div>
+    </main>
   )
 }
 

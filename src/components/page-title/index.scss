@@ -1,9 +1,12 @@
 .page-title {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
+  position: sticky;
+  top: 0;
   padding: 2rem;
   box-sizing: border-box;
+  z-index: 99;
 
   .logo {
     width: 50px;
