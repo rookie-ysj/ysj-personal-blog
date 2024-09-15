@@ -9,7 +9,7 @@ export default function ChangeTheme() {
     <>
       <Avatar
         className="cursor-pointer w-4 h-4 mr-2"
-        src={theme === 'light' ? '/sun.svg' : 'moon.svg'}
+        src={theme === 'light' ? '/sun.svg' : '/moon.svg'}
         onClick={() => dispatch(changeTheme(theme === 'light' ? 'dark' : 'light'))}
       />
     </>
