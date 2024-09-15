@@ -3,8 +3,6 @@ import ChangeTheme from '../change-theme/ChangeTheme.tsx'
 import './index.scss'
 
 export default function PageTitle() {
-  const a = 1
-  const b = 2
   return (
     <header className="page-title bg-background">
       <img

@@ -12,6 +12,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
+      "echo 'begin to lint file'",
       "eslint --fix",
       "git add"
     ]
