@@ -1,0 +1,32 @@
+name: blog deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Blog Build📦
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+
+      - name: Install
+        run: |
+          npm install -g pnpm
+          pnpm install --frozen-lockfile
+
+      - name: Build docs
+        run: npm run docs:build
+
+      - name: Deploy to GitHub Pages🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: github-pages
+          folder: .vitepress/dist
