@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "BLOG"
-  text: "Ysj Personal Blog"
-  tagline: 
+  text: "个人博客"
+  tagline:
   actions:
     - theme: brand
       text: 查看博客
