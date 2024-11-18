@@ -1,10 +1,10 @@
 # Github workflow自动化部署
 
-![image-20240908210523023](C:\Users\44550\AppData\Roaming\Typora\typora-user-images\image-20240908210523023.png)
+![image-20240908210523023](http://47.101.145.72/images/workflow.png)
 
 项目内新建文件夹	.github，内新建workflows文件夹，内新建一个yaml文件
 
-![image-20240908205409848](C:\Users\44550\AppData\Roaming\Typora\typora-user-images\image-20240908205409848.png)
+![image-20240908205409848](http://47.101.145.72/images/workflow-yaml.png)
 
 yaml内容：
 
@@ -59,7 +59,7 @@ jobs:
 
 本地commit之后，最后点击actions，有新的工作流。自已的工作流跑完之后，会有pages-build-deployment的工作流帮你部署页面
 
-![image-20240908213358017](C:\Users\44550\AppData\Roaming\Typora\typora-user-images\image-20240908213358017.png)
+![image-20240908213358017](http://47.101.145.72/images/pages-build-deplopment.png)
 
 成功后，点击链接，就打开了你打包后的页面
 
