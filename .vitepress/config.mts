@@ -19,6 +19,12 @@ export default defineConfig({
           { text: 'Event-loop', link: '/Event-loop' },
         ]
       },
+      {
+        text: '项目',
+        items: [
+          { text: 'workflow', link: '/github-workflow' },
+        ]
+      },
     ],
 
     socialLinks: [
