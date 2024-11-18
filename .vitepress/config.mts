@@ -16,7 +16,7 @@ export default defineConfig({
       {
         text: 'JavaScript',
         items: [
-          { text: '事件循环', link: '/Javascript/事件循环' },
+          { text: 'Event-loop', link: '/Event-loop' },
         ]
       },
     ],

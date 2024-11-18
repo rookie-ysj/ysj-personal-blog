@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 查看博客
-      link: /Javascript/事件循环
+      link: /Event-loop
 
 features:
   - title: React
